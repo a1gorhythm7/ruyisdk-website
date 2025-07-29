@@ -92,6 +92,7 @@ info: package qemu-user-riscv-upstream-8.2.0-ruyi.20240128 installed to /home/me
           clearInterval(typeInterval);
           setTyping(false);
           
+          
           // Small delay after typing is complete before showing output
           setTimeout(() => {
             // Animate the output - now with 2s animation
@@ -105,9 +106,11 @@ info: package qemu-user-riscv-upstream-8.2.0-ruyi.20240128 installed to /home/me
               } else {
                 clearInterval(outputInterval);
                 
+                
                 // Wait 3 seconds after command completes, then show 'clear' command
                 setTimeout(() => {
                   setText(prefix + cmd.command + '\n' + cmd.output + '\n' + prefix + 'clear');
+                  
                   
                   // Slight delay to show 'clear' command, then clear and go to next command
                   setTimeout(() => {
@@ -121,6 +124,7 @@ info: package qemu-user-riscv-upstream-8.2.0-ruyi.20240128 installed to /home/me
           }, 300);
         }
       }, 50); // Typing speed
+      
       
       return () => clearInterval(typeInterval);
     }
@@ -165,9 +169,11 @@ const MainDisplay = () => {
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
   
+  
   // State for button hover effects.
   const [isPrimaryButtonHovered, setIsPrimaryButtonHovered] = useState(false);
   const [isSecondaryButtonHovered, setIsSecondaryButtonHovered] = useState(false);
+  
   
   const modalRef = useRef(null);
 
@@ -203,6 +209,7 @@ const MainDisplay = () => {
       }
     `;
     document.head.appendChild(styleEl);
+    
     
     return () => {
       document.head.removeChild(styleEl);
