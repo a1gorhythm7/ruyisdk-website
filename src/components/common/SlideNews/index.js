@@ -177,12 +177,12 @@ export default function SlideNews() {
       content: "RuyiSDK IDE 是一款基于开源软件 Eclipse 开发的、图形化的、主要面向 RISC-V 开发者的集成开发环境。该工具在继承 Eclipse 对嵌入式开发支持的基础上，计划逐步集成多款主流RISC-V开发板的 SDK，使得 RISC-V 开发更加便捷。",
       Image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       Links: "/docs/IDE/",
-      ButtonText: "了解更多",        // 了解更多/立即跳转
-      titleColor: "#ffffff",         // Custom title color (white)
-      subtitleColor: "#f0f0f0",      // Custom subtitle color (light)
-      size: CardSizes.S,             // Small card (half width, 1x height)
-      isBlur: false,                 // Apply blur effect to background
-      ispopup: false,                // Disable click-to-show-popup for this card
+      ButtonText: "了解更多",
+      titleColor: "#ffffff",
+      subtitleColor: "#f0f0f0",
+      size: CardSizes.S,
+      isBlur: false,
+      ispopup: false,
     },
     {
       title: <Translate>RevyOS</Translate>,
@@ -191,11 +191,11 @@ export default function SlideNews() {
       Image: "img/RevyOS-logo.svg",
       Links: revyosLink,
       ButtonText: "立即跳转",
-      titleColor: "#ffffff",         // Custom title color (white)
-      subtitleColor: "#f0f0f0",      // Custom subtitle color (light)
-      size: CardSizes.S,             // Small card (half width, 1x height)
-      isBlur: true,                  // Enable blur on background
-      ispopup: false,                // Disable click-to-show-popup for this card
+      titleColor: "#ffffff",
+      subtitleColor: "#f0f0f0",
+      size: CardSizes.S,
+      isBlur: true,
+      ispopup: false,
     },
     {
       title: <Translate>Support Matrix</Translate>,
@@ -204,11 +204,11 @@ export default function SlideNews() {
       Image: "img/ruyi-logo-720.svg",
       Links: "https://matrix.ruyisdk.org/",
       ButtonText: "立即跳转",
-      titleColor: "#ffffff",         // Custom title color (white)
-      subtitleColor: "#f0f0f0",      // Custom subtitle color (light)
-      size: CardSizes.S,             // Small card (half width, 1x height)
-      isBlur: true,                  // Enable blur on background
-      ispopup: false,                // Disable click-to-show-popup for this card
+      titleColor: "#ffffff",
+      subtitleColor: "#f0f0f0",
+      size: CardSizes.S,
+      isBlur: true,
+      ispopup: false,
     },
     {
       title: <Translate>荔枝派 4A</Translate>,
@@ -217,11 +217,11 @@ export default function SlideNews() {
       Image: "img/licheepi-4a.png",
       Links: "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/",
       ButtonText: "立即下载",
-      titleColor: "#ffffff",         // Custom title color (white)
-      subtitleColor: "#f0f0f0",      // Custom subtitle color (light)
-      size: CardSizes.S,             // Small card (half width, 1x height)
-      isBlur: false,                 // Enable blur on background
-      ispopup: true,                 // Enable click-to-show-popup for this card
+      titleColor: "#ffffff",
+      subtitleColor: "#f0f0f0",
+      size: CardSizes.S,
+      isBlur: false,
+      ispopup: true,
     },
   ];
 
@@ -357,14 +357,33 @@ export default function SlideNews() {
         <div
           className={styles.expandedCardOverlay}
           onClick={handleOverlayClick}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
         >
           <div
             className={styles.expandedCard}
             style={{
-              backgroundImage: `url(${slideImages[expandedCardIndex].Image})`,
+              display: 'flex',
+              flexDirection: 'column',
             }}
           >
-            <div className={styles.expandedCardImageOverlay} />
+            {/* New container for the image zone */}
+            <div
+              style={{
+                flexGrow: 1,
+                position: 'relative',
+                backgroundImage: `url(${slideImages[expandedCardIndex].Image})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
+              <div className={styles.expandedCardImageOverlay} />
+            </div>
+
             <button
               className={styles.closeButton}
               onClick={handleCloseExpandedCard}
