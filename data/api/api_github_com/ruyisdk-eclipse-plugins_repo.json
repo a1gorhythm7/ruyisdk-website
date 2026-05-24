@@ -1,13 +1,13 @@
 {
   "data": {
-    "stargazers_count": 1,
+    "stargazers_count": 2,
     "forks_count": 7,
-    "subscribers_count": 4,
-    "open_issues_count": 27,
-    "prs_count": 84
+    "subscribers_count": 5,
+    "open_issues_count": 21,
+    "prs_count": 117
   },
   "ruyisdk_org_data": {
-    "generatedAt": "2026-03-26T19:49:15.857Z",
+    "generatedAt": "2026-05-21T20:29:05.635Z",
     "source": "https://api.github.com/repos/ruyisdk/ruyisdk-eclipse-plugins"
   }
 }
