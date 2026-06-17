@@ -220,8 +220,11 @@ html {
   }
 
   .table-of-contents__link {
-    font-size: 12px;
+    font-size: 13px;
     display: block;
+    padding: 6px 8px;
+    border-radius: 6px;
+    color: var(--home-subtitle-color);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 
@@ -232,33 +235,38 @@ html {
     }
 
     &:hover {
-      color: var(--ifm-link-color);
+      color: var(--ifm-color-primary);
+      background-color: rgba(217, 224, 243, 0.4); /* subtle highlight matching brand blue */
       transform: translateX(2px);
 
       code {
-        color: var(--ifm-link-color);
+        color: var(--ifm-color-primary);
       }
     }
   }
 
   .table-of-contents__link--active {
-    font-weight: 500;
+    font-weight: 600;
     margin-left: -16px;
     padding-left: 12px;
-    color: var(--ifm-font-color-base);
-    border-left: 4px solid var(--brand);
+    color: var(--ifm-color-primary);
+    border-left: 4px solid var(--ifm-color-primary);
+    border-radius: 0 6px 6px 0;
+    background-color: rgba(10, 44, 126, 0.04);
+    transition: all 0.2s ease-in-out;
 
     code {
       font-weight: 600;
-      color: var(--ifm-font-color-base);
+      color: var(--ifm-color-primary);
       white-space: nowrap;
     }
 
     &:hover {
-      color: var(--ifm-font-color-base);
+      color: var(--ifm-color-primary-dark);
+      transform: translateX(0);
 
       code {
-        color: var(--ifm-font-color-base);
+        color: var(--ifm-color-primary-dark);
       }
     }
   }
