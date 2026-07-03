@@ -1,101 +1,101 @@
 {
-  "last_updated": "2026-06-16T13:00:22.576148Z",
+  "last_updated": "2026-06-25T15:00:00.738239Z",
   "downloads": {
-    "total": 56151
+    "total": 57964
   },
   "pm_downloads": {
-    "total": 74787
+    "total": 79987
   },
   "other_categories_downloads": {
     "3rdparty": {
-      "total": 21254
+      "total": 22080
     },
     "humans": {
-      "total": 12248
+      "total": 17017
     },
     "ide": {
-      "total": 2867
+      "total": 3000
     }
   },
   "downloads_by_categories_v1": {
     "pkg": {
-      "total": 56151
+      "total": 57964
     },
     "pm:github": {
-      "total": 5899
+      "total": 5954
     },
     "pm:mirror": {
-      "total": 60929
+      "total": 65772
     },
     "pm:pypi": {
-      "total": 7959
+      "total": 8261
     },
     "3rdparty": {
-      "total": 21254
+      "total": 22080
     },
     "humans": {
-      "total": 12248
+      "total": 17017
     },
     "ide:eclipse:mirror": {
-      "total": 1945
+      "total": 1969
     },
     "ide:plugin:eclipse:mirror": {
-      "total": 385
+      "total": 443
     },
     "ide:plugin:eclipse:github": {
-      "total": 86
+      "total": 88
     },
     "ide:plugin:vscode:mirror": {
-      "total": 352
+      "total": 395
     },
     "ide:plugin:vscode:github": {
-      "total": 99
+      "total": 105
     }
   },
   "installs": {
-    "total": 15825
+    "total": 17654
   },
   "top_packages": {},
   "top_commands": {
-    "ruyi admin format-manifest": {
-      "total": 20559
-    },
     "ruyi update": {
-      "total": 20065
+      "total": 21920
+    },
+    "ruyi admin format-manifest": {
+      "total": 20560
     },
     "ruyi": {
-      "total": 13048
+      "total": 13251
     },
     "ruyi list": {
-      "total": 12989
+      "total": 13064
     },
     "ruyi news list": {
-      "total": 5348
+      "total": 5398
     },
     "ruyi news read": {
-      "total": 4756
+      "total": 4758
     },
     "ruyi telemetry status": {
-      "total": 2874
+      "total": 2930
     },
     "ruyi telemetry consent": {
-      "total": 2826
+      "total": 2860
     },
     "ruyi list profiles": {
-      "total": 2347
+      "total": 2350
     },
     "ruyi install": {
-      "total": 2328
+      "total": 2338
     }
   },
   "github_org_stats": [
     {
       "name": "ruyisdk",
       "watchers_count": 66,
-      "forks_count": 282,
-      "stars_count": 231,
-      "prs_count": 2543,
-      "issues_count": 599,
+      "forks_count": 284,
+      "stars_count": 233,
+      "prs_count": 2594,
+      "issues_count": 612,
       "contributors_count": 98,
       "detail_by_repo": [
         {
@@ -103,7 +103,7 @@
           "watchers_count": 2,
           "forks_count": 16,
           "stars_count": 2,
-          "prs_count": 285,
+          "prs_count": 294,
           "issues_count": 0,
           "contributors_count": 19
         },
@@ -155,9 +155,9 @@
         {
           "name": "docs",
           "watchers_count": 1,
-          "forks_count": 31,
+          "forks_count": 32,
           "stars_count": 6,
-          "prs_count": 128,
+          "prs_count": 130,
           "issues_count": 13,
           "contributors_count": 26
         },
@@ -229,8 +229,8 @@
           "watchers_count": 1,
           "forks_count": 18,
           "stars_count": 39,
-          "prs_count": 272,
-          "issues_count": 200,
+          "prs_count": 276,
+          "issues_count": 202,
           "contributors_count": 8
         },
         {
@@ -256,8 +256,8 @@
           "watchers_count": 2,
           "forks_count": 23,
           "stars_count": 8,
-          "prs_count": 439,
-          "issues_count": 69,
+          "prs_count": 459,
+          "issues_count": 71,
           "contributors_count": 19
         },
         {
@@ -327,7 +327,7 @@
           "name": "support-matrix",
           "watchers_count": 4,
           "forks_count": 36,
-          "stars_count": 56,
+          "stars_count": 58,
           "prs_count": 333,
           "issues_count": 50,
           "contributors_count": 25
@@ -344,9 +344,9 @@
         {
           "name": "linux-xuantie-kernel",
           "watchers_count": 6,
-          "forks_count": 39,
+          "forks_count": 40,
           "stars_count": 40,
-          "prs_count": 257,
+          "prs_count": 258,
           "issues_count": 6,
           "contributors_count": 0
         },
@@ -364,7 +364,7 @@
           "watchers_count": 3,
           "forks_count": 2,
           "stars_count": 0,
-          "prs_count": 80,
+          "prs_count": 85,
           "issues_count": 18,
           "contributors_count": 3
         },
@@ -454,8 +454,8 @@
           "watchers_count": 5,
           "forks_count": 7,
           "stars_count": 2,
-          "prs_count": 120,
-          "issues_count": 48,
+          "prs_count": 127,
+          "issues_count": 53,
           "contributors_count": 8
         },
         {
@@ -463,8 +463,8 @@
           "watchers_count": 1,
           "forks_count": 12,
           "stars_count": 3,
-          "prs_count": 146,
-          "issues_count": 32,
+          "prs_count": 147,
+          "issues_count": 36,
           "contributors_count": 11
         },
         {
@@ -499,7 +499,7 @@
           "watchers_count": 0,
           "forks_count": 4,
           "stars_count": 1,
-          "prs_count": 18,
+          "prs_count": 20,
           "issues_count": 0,
           "contributors_count": 0
         }
@@ -507,7 +507,7 @@
     }
   ],
   "ruyisdk_org_data": {
-    "generatedAt": "2026-06-17T06:16:43.189Z",
+    "generatedAt": "2026-06-25T21:12:23.962Z",
     "source": "https://api.ruyisdk.cn/fe/dashboard"
   }
 }
